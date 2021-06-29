@@ -13,7 +13,6 @@ import kotlin.jvm.functions.Function1;
 
 public class DiscoveryActivity extends AppCompatActivity {
 
-    MeowBottomNavigation meowBottomNavigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,33 +21,8 @@ public class DiscoveryActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-        meowBottomNavigation = findViewById(R.id.main_nav);
 
-        meowBottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_menu));
-        meowBottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_mic));
-        meowBottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_home));
-
-        meowBottomNavigation.show(2, true);
         replace(new RecordingFragment());
-        meowBottomNavigation.setOnClickMenuListener(model -> {
-
-            switch (model.getId()) {
-
-                case 1:
-                    replace(new MenuFragment());
-                    break;
-
-                case 2:
-                    replace(new RecordingFragment());
-                    break;
-
-                case 3:
-                    replace(new HomeFragment());
-                    break;
-            }
-            return null;
-        });
-
 
     }
 
