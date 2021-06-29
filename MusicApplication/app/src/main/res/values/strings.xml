@@ -16,5 +16,10 @@
     <string name="take_picture">צילום תמונה</string>
     <string name="gallery_picture">תמונה מהגלריה</string>
     <string name="continue_btn">המשך</string>
+    <string name="register_dialog_text">כדי שתוכל/י לפרסם ולנעוץ סיפור ע״ג מפה עליך להירשם לאפליקציית MY Record</string>
+    <string name="register">להרשמה</string>
+    <string name="lbl_locate_dialog_text">מי יוכל לשמוע את הסיפור שלך?</string>
+    <string name="only_me">רק אני</string>
+    <string name="everyone">כולם</string>
 </resources>
 
