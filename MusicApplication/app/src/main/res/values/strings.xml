@@ -9,5 +9,12 @@
     <string name="map">מפה</string>
     <string name="description_library">ספריית הסיפורים \nשלך עדיין ריקה</string>
     <string name="description_highlight">זה הזמן להתחיל</string>
+    <string name="upload_story_title">ברכות</string>
+    <string name="upload_story_lbl_1">הסיפור הראשון שלך הוקלט בהצלחה.</string>
+    <string name="upload_story_lbl_2">רוצה לתת לסיפור שם?</string>
+    <string name="upload_story_lbl_3">רוצה להוסיף תמונה?</string>
+    <string name="take_picture">צילום תמונה</string>
+    <string name="gallery_picture">תמונה מהגלריה</string>
+    <string name="continue_btn">המשך</string>
 </resources>
 
