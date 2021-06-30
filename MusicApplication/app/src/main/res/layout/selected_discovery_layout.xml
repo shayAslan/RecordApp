@@ -15,7 +15,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="120dp"
             android:layout_margin="5dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="12dp"
@@ -121,7 +121,7 @@
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="40dp"
                                         android:layout_height="40dp"
-                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginStart="4dp"
                                         app:cardCornerRadius="34dp"
                                         app:cardElevation="0dp">
 
@@ -131,7 +131,7 @@
                                             android:layout_height="match_parent"
                                             android:layout_centerInParent="true"
                                             android:scaleType="fitXY"
-                                            android:src="@drawable/ic_profile" />
+                                            android:src="@drawable/avatar_icon_small" />
 
                                     </androidx.cardview.widget.CardView>
 

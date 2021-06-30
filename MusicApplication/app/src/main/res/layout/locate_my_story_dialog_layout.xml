@@ -148,6 +148,7 @@
                     android:fontFamily="@font/rubik_regular"
                     android:layoutDirection="rtl"
                     android:text="@string/everyone"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
                 <RadioButton
@@ -158,6 +159,7 @@
                     android:fontFamily="@font/rubik_regular"
                     android:layoutDirection="rtl"
                     android:text="@string/only_me"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
             </RadioGroup>
 
@@ -201,7 +203,7 @@
                 android:layout_toStartOf="@+id/dummy_image"
                 android:fontFamily="@font/rubik_meduim"
                 android:gravity="center"
-                android:text="מקמו את הסיפור שלי"
+                android:text="@string/my_story_btn_text"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 

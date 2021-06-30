@@ -24,5 +24,10 @@
     <string name="delete">מחיקה</string>
     <string name="change_location">שינוי מיקום</string>
     <string name="change_title">שינוי שם/כותרת</string>
+    <string name="my_story_btn_text">מקמו את הסיפור שלי</string>
+    <string name="using_facebook">באמצעות פייסבוק</string>
+    <string name="or">או</string>
+    <string name="type_number">הקלד/י מס׳ טלפון</string>
+    <string name="enter">כניסה</string>
 </resources>
 

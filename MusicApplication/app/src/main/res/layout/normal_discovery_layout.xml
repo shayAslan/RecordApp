@@ -5,8 +5,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginBottom="35dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:orientation="vertical">
 
         <include
@@ -15,8 +15,8 @@
 
         <include
             android:id="@+id/selected_discovery"
-            android:visibility="gone"
-            layout="@layout/selected_discovery_layout" />
+            layout="@layout/selected_discovery_layout"
+            android:visibility="gone" />
 
 
     </LinearLayout>
