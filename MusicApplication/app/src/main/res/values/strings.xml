@@ -21,5 +21,8 @@
     <string name="lbl_locate_dialog_text">מי יוכל לשמוע את הסיפור שלך?</string>
     <string name="only_me">רק אני</string>
     <string name="everyone">כולם</string>
+    <string name="delete">מחיקה</string>
+    <string name="change_location">שינוי מיקום</string>
+    <string name="change_title">שינוי שם/כותרת</string>
 </resources>
 
