@@ -15,6 +15,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="35dp"
             android:src="@drawable/audio_map_icon" />
 
@@ -68,13 +69,12 @@
                     android:layout_toStartOf="@+id/venue_image"
                     android:layout_toEndOf="@+id/btn_close"
                     android:ellipsize="end"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/rubik_meduim"
                     android:gravity="start"
                     android:lines="1"
                     android:text="תל מונד"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:id="@+id/lbl_venue_address"
@@ -85,7 +85,7 @@
                     android:layout_toStartOf="@+id/venue_image"
                     android:layout_toEndOf="@+id/btn_close"
                     android:ellipsize="end"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/rubik_regular"
                     android:gravity="start"
                     android:lines="1"
                     android:text="כתובת: לורם איפסום"
@@ -101,7 +101,7 @@
                     android:layout_toStartOf="@+id/venue_image"
                     android:layout_toEndOf="@+id/btn_close"
                     android:ellipsize="end"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/rubik_meduim"
                     android:gravity="start"
                     android:lines="1"
                     android:text="כותרת הסיפור"
@@ -124,12 +124,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:fontFamily="@font/montserrat"
+                android:fontFamily="@font/rubik_meduim"
                 android:lines="1"
                 android:text="@string/lbl_locate_dialog_text"
                 android:textColor="@color/black"
-                android:textSize="15dp"
-                android:textStyle="bold" />
+                android:textSize="15dp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -146,7 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@color/radio_color"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/rubik_regular"
                     android:layoutDirection="rtl"
                     android:text="@string/everyone"
                     android:textSize="16sp" />
@@ -156,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@color/radio_color"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/rubik_regular"
                     android:layoutDirection="rtl"
                     android:text="@string/only_me"
                     android:textSize="16sp" />
@@ -200,12 +199,11 @@
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="5dp"
                 android:layout_toStartOf="@+id/dummy_image"
-                android:fontFamily="@font/montserrat"
+                android:fontFamily="@font/rubik_meduim"
                 android:gravity="center"
                 android:text="מקמו את הסיפור שלי"
                 android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textSize="20dp" />
 
         </RelativeLayout>
 
