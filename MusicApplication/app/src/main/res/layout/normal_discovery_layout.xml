@@ -11,12 +11,12 @@
 
         <include
             android:id="@+id/unselected_discovery"
-            layout="@layout/unselected_discovery_layout" />
+            layout="@layout/unselected_discovery_layout"
+            android:visibility="gone" />
 
         <include
             android:id="@+id/selected_discovery"
-            layout="@layout/selected_discovery_layout"
-            android:visibility="gone" />
+            layout="@layout/selected_discovery_layout" />
 
 
     </LinearLayout>

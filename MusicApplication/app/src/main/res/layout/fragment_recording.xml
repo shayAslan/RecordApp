@@ -45,7 +45,7 @@
                         android:completionThreshold="1"
                         android:drawableStart="@drawable/search_icon"
                         android:fontFamily="@font/rubik_regular"
-                        android:hint="חפש לפי רחוב או שכונה"
+                        android:hint="@string/search_for_stories"
                         android:imeOptions="actionSearch"
                         android:inputType="text"
                         android:lines="1"
