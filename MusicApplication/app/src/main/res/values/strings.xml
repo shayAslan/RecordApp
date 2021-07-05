@@ -30,5 +30,17 @@
     <string name="type_number">הקלד/י מס׳ טלפון</string>
     <string name="enter">כניסה</string>
     <string name="search_for_stories">חיפוש סיפורים</string>
+    <string name="register_using_facebook">הרשמה באמצעות פייסבוק</string>
+    <string name="please_fill_the_following_details">נא למלא את הפרטים הבאים</string>
+    <string name="hint_private_name">שם פרטי</string>
+    <string name="hint_last_name">שם משפחה</string>
+    <string name="phone_number">מס׳ טלפון</string>
+    <string name="email">דוא״ל</string>
+    <string name="registration_sub_title_text">יש לך שתי אפשרויות:</string>
+    <string name="read_and_approve">קראתי ואני מאשר/ת</string>
+    <string name="myrecord_terms">תקנון של MyRecord</string>
+    <string name="create_new_account">יצירת חשבון חדש</string>
+    <string name="skip">דלג/י בשלב זה</string>
+
 </resources>
 

@@ -5,281 +5,297 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    android:padding="10dp"
-    tools:context=".CreateAccountActivity">
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_logo_registration" />
+
+    <TextView
+        android:id="@+id/lbl_dummy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_regular"
+        android:text="@string/registration_sub_title_text"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_facebook_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_dummy1">
+
+        <RelativeLayout
+            android:id="@+id/btn_facebook_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/dummy_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/lbl_dummy2"
+                android:src="@drawable/facebook" />
+
+
+            <TextView
+                android:id="@+id/lbl_dummy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/rubik_meduim"
+                android:gravity="center"
+                android:text="@string/register_using_facebook"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/lbl_dummy3_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_facebook_login">
+
+        <TextView
+            android:id="@+id/lbl_dummy3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/rubik_bold"
+            android:text="@string/or"
+            android:textColor="#4A4B4B"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/lbl_dummy3"
+            android:background="#DBD8D8" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/lbl_dummy3"
+            android:background="#DBD8D8" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lbl_dummy4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/rubik_regular"
+        android:text="@string/please_fill_the_following_details"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_dummy3_parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
         android:orientation="vertical"
-        android:weightSum="11">
+        app:layout_constraintTop_toBottomOf="@+id/lbl_dummy4">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="2"
-            android:src="@drawable/logo_3" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.5"
+        <EditText
+            android:id="@+id/lbl_register_private_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/edittext_register_bg"
+            android:drawableStart="@drawable/asterisk"
             android:fontFamily="@font/rubik_regular"
-            android:text="עומדות בפניך שתי אפשרויות "
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:hint="@string/hint_private_name"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#4A4B4B"
+            android:textColorHint="#4A4B4B" />
 
+        <EditText
+            android:id="@+id/lbl_register_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_register_bg"
+            android:drawableStart="@drawable/asterisk"
+            android:fontFamily="@font/rubik_regular"
+            android:hint="@string/hint_last_name"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#4A4B4B"
+            android:textColorHint="#4A4B4B" />
+
+        <EditText
+            android:id="@+id/lbl_register_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_register_bg"
+            android:drawableStart="@drawable/asterisk"
+            android:fontFamily="@font/rubik_regular"
+            android:hint="@string/phone_number"
+            android:gravity="right|center_vertical"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLines="10"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#4A4B4B"
+            android:textColorHint="#4A4B4B" />
+
+        <EditText
+            android:id="@+id/lbl_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_register_bg"
+            android:fontFamily="@font/rubik_regular"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#4A4B4B"
+            android:textColorHint="#4A4B4B" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.2"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <androidx.cardview.widget.CardView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="7dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="7dp"
-                app:cardElevation="7dp">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="3dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:drawableRight="@drawable/facbook_logo"
-                        android:drawablePadding="10dp"
-                        android:fontFamily="@font/rubik_regular"
-                        android:gravity="center"
-                        android:text="הרשמה באמצעות פייסבוק"
-                        android:textColor="@color/black"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="3dp"
-                android:weightSum="7">
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="3"
-                    android:background="@color/edittext_bag_color" />
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/rubik_regular"
-                    android:text="או"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="3"
-                    android:background="@color/edittext_bag_color" />
-
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/rubik_regular"
-                android:text="הקלדת פרטים הבאים"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittext_bag"
-                android:drawableLeft="@drawable/ic_flower"
-                android:drawablePadding="10dp"
-                android:drawableTint="@color/edittext_icon_color"
-                android:fontFamily="@font/rubik_regular"
-                android:padding="10dp"
-                android:text="שם פרטי"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/edittext_bag"
-                android:drawableLeft="@drawable/ic_flower"
-                android:drawablePadding="10dp"
-                android:drawableTint="@color/edittext_icon_color"
-                android:fontFamily="@font/rubik_regular"
-                android:padding="10dp"
-                android:text="שם משפחה"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/edittext_bag"
-                android:drawableLeft="@drawable/ic_flower"
-                android:drawablePadding="10dp"
-                android:drawableTint="@color/edittext_icon_color"
-                android:fontFamily="@font/rubik_regular"
-                android:padding="10dp"
-                android:text="מס׳ טלפון"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/edittext_bag"
-                android:fontFamily="@font/rubik_regular"
-                android:padding="10dp"
-                android:text="דוא״ל"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:gravity="end"
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/btn_terms"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/underline_layerlist"
                 android:fontFamily="@font/rubik_regular"
                 android:gravity="center_vertical"
-                android:padding="3dp"
-                android:text="תקנון של"
+                android:text="@string/myrecord_terms"
                 android:textColor="@color/link_text_color"
-                android:textSize="14sp" />
+                android:textSize="14dp" />
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="5dp"
                 android:fontFamily="@font/rubik_regular"
                 android:gravity="center_vertical"
-                android:padding="3dp"
-                android:text="MyRecord"
-                android:textColor="@color/link_text_color"
-                android:textSize="14sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/rubik_regular"
-                android:gravity="center_vertical"
-                android:padding="3dp"
-                android:text="קראתי ואני מאשר"
-                android:textColor="#575656"
-                android:textSize="14sp" />
+                android:text="@string/read_and_approve"
+                android:textColor="#4A4B4B"
+                android:textSize="14dp" />
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:buttonTint="#4A4B4B"
                 android:padding="3dp" />
 
         </LinearLayout>
 
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_upload_picture"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp">
 
-
-            <Button
-                android:id="@+id/create_accout_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/create_account_btn_bag"
-                android:drawableRight="@drawable/ic_user"
-                android:drawablePadding="10dp"
-                android:drawableTint="@color/white"
-                android:gravity="center"
-                android:paddingLeft="70dp"
-                android:paddingRight="70dp"
-                android:text="יצירת חשבון חדש"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
 
-        </LinearLayout>
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/lbl_dummy5"
+                    android:src="@drawable/person_placeholder" />
+
+
+                <TextView
+                    android:id="@+id/lbl_dummy5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/rubik_meduim"
+                    android:gravity="center"
+                    android:text="@string/create_new_account"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.8"
-            android:fontFamily="@font/rubik_regular"
+            android:id="@+id/btn_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/rubik_meduim"
             android:gravity="center"
-            android:text="דלג/י בשלב זה"
+            android:padding="5dp"
+            android:text="@string/skip"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textSize="16dp" />
 
 
     </LinearLayout>
