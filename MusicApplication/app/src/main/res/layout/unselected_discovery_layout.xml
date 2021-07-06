@@ -99,7 +99,7 @@
                                             android:fontFamily="@font/rubik_meduim"
                                             android:text="שם/ניק ניים"
                                             android:textColor="@color/black"
-                                            android:textSize="15sp" />
+                                            android:textSize="15dp" />
 
                                         <TextView
                                             android:id="@+id/lbl_place"

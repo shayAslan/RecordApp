@@ -101,6 +101,18 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="12dp" />
 
+            <FrameLayout
+                android:id="@+id/locations_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="#0E131E26"
+                android:gravity="center"
+                android:visibility="gone">
+
+            </FrameLayout>
+
         </LinearLayout>
 
 

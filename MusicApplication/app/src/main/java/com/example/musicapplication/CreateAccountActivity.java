@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
-    Button createAccount;
+    View createAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_account);
         getSupportActionBar().hide();
 
-        createAccount=findViewById(R.id.create_accout_btn);
+        createAccount=findViewById(R.id.btn_create_account);
 
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
