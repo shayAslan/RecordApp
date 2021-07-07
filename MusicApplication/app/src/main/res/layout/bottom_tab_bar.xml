@@ -30,6 +30,7 @@
             <LinearLayout
                 android:id="@+id/btn_main_menu"
                 android:layout_width="0dp"
+                android:background="?attr/selectableItemBackground"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center">
@@ -52,6 +53,7 @@
             <LinearLayout
                 android:id="@+id/btn_main_home"
                 android:layout_width="0dp"
+                android:background="?attr/selectableItemBackground"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center">

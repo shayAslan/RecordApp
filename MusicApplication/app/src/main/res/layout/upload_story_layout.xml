@@ -51,10 +51,10 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="50dp"
-        android:text="תל"
         android:background="@drawable/underline_gray_layerlist"
         android:fontFamily="@font/rubik_meduim"
         android:padding="10dp"
+        android:text="תל"
         android:textColor="#4A4B4B"
         android:textSize="15sp" />
 
@@ -75,6 +75,9 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="22dp"
         android:layout_marginEnd="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         app:cardBackgroundColor="#FFD2D2"
         app:cardCornerRadius="15dp"
         app:cardElevation="7dp">
@@ -116,6 +119,9 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         app:cardBackgroundColor="#F9FAFC"
         app:cardCornerRadius="15dp"
         app:cardElevation="7dp">
@@ -156,6 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="115dp"
+        android:background="?attr/selectableItemBackground"
         android:fontFamily="@font/rubik_meduim"
         android:gravity="center"
         android:padding="5dp"

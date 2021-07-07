@@ -173,13 +173,16 @@
         android:layout_width="292dp"
         android:layout_height="56dp"
         android:layout_marginTop="-30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/create_account_btn_bag"
+            android:background="@drawable/create_account_btn_enabled"
             android:orientation="horizontal"
             android:paddingTop="12dp"
             android:paddingBottom="12dp">

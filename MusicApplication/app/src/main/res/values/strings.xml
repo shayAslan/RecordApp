@@ -41,6 +41,11 @@
     <string name="myrecord_terms">תקנון של MyRecord</string>
     <string name="create_new_account">יצירת חשבון חדש</string>
     <string name="skip">דלג/י בשלב זה</string>
+    <string name="verify_number">אימות טלפון נייד</string>
+    <string name="phone_verification_text">ברגעים אלו נשלח לך קוד אימות לנייד שמסתיים ב - 888, נא להזין אותו כעת.</string>
+    <string name="insert_code">הזן/י קוד שקיבלת</string>
+    <string name="verify">אמת נייד</string>
+    <string name="didnt_got_the_code">לא קיבלתי קוד, שלחו לי שוב</string>
 
 </resources>
 

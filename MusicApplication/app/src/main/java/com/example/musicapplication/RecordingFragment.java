@@ -25,29 +25,9 @@ public class RecordingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view= inflater.inflate(R.layout.fragment_recording, container, false);
+        view= inflater.inflate(R.layout.verification_layout, container, false);
 
 
-        arrayList=new ArrayList();
-
-        arrayList.add("");
-        arrayList.add("");
-        arrayList.add("");
-        arrayList.add("");
-        arrayList.add("");
-        arrayList.add("");
-        arrayList.add("");
-        arrayList.add("");
-
-
-
-        recyclerView=view.findViewById(R.id.main_rec);
-
-
-        MainAdapter mainAdapter=new MainAdapter(arrayList);
-        recyclerView.setAdapter(mainAdapter);
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
 
 

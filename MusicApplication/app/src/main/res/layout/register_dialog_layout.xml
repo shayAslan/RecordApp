@@ -44,7 +44,7 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="24dp"
-                android:background="@drawable/create_account_btn_bag"
+                android:background="@drawable/create_account_btn_enabled"
                 android:elevation="5dp"
                 android:fontFamily="@font/rubik_meduim"
                 android:gravity="center"
