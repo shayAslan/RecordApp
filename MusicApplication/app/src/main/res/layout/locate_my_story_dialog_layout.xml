@@ -175,7 +175,7 @@
         android:layout_marginTop="-30dp"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
+        android:foreground="@drawable/btn_white_bg"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp">
 

@@ -70,30 +70,30 @@
                 android:orientation="horizontal"
                 android:padding="5dp">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="28dp"
                     android:background="?attr/selectableItemBackground"
-                    android:drawableTop="@drawable/menu_bar_1"
                     android:fontFamily="@font/rubik_meduim"
                     android:gravity="center"
                     android:text="@string/map"
                     android:textColor="@color/edittext_icon_color"
-                    android:textSize="10dp" />
+                    android:textSize="10dp"
+                    app:drawableTopCompat="@drawable/menu_bar_1" />
 
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="7dp"
                     android:background="?attr/selectableItemBackground"
-                    android:drawableTop="@drawable/menubar_2"
                     android:fontFamily="@font/rubik_meduim"
                     android:gravity="center"
                     android:text="@string/list"
                     android:textColor="@color/selected_item"
-                    android:textSize="10dp" />
+                    android:textSize="10dp"
+                    app:drawableTopCompat="@drawable/menubar_2" />
 
             </LinearLayout>
 

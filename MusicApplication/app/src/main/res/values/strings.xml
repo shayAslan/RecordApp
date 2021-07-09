@@ -46,6 +46,11 @@
     <string name="insert_code">הזן/י קוד שקיבלת</string>
     <string name="verify">אמת נייד</string>
     <string name="didnt_got_the_code">לא קיבלתי קוד, שלחו לי שוב</string>
+    <string name="cancel">ביטול</string>
+    <string name="save_recording_btn">שמירה ומיקום</string>
+    <string name="recording_dialog_title_text">האם את/ה רוצה לבטל את ההקלטה?</string>
+    <string name="recording_dialog_text">לאחר ביטול, ההקלטה תמחק לאלתר.</string>
+    <string name="save">שמירה</string>
 
 </resources>
 

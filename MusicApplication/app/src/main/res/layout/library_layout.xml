@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="#F9FAFC">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/top_bar"
@@ -55,58 +55,148 @@
                 android:fontFamily="@font/rubik_meduim"
                 android:gravity="center"
                 android:text="דוד ארצי"
-                android:textColor="@color/black"
+                android:textColor="#0E131E"
                 android:textSize="20dp" />
 
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/library_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <RelativeLayout
+        android:id="@+id/record_empty_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@+id/top_bar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="148dp"
-        android:src="@drawable/library_icon" />
+        android:visibility="gone">
 
-    <TextView
-        android:id="@+id/lbl_dummy1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/library_icon"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="73dp"
-        android:fontFamily="@font/rubik_bold"
-        android:gravity="center"
-        android:text="@string/description_library"
-        android:textColor="@color/black"
-        android:textSize="24dp" />
+        <ImageView
+            android:id="@+id/library_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="148dp"
+            android:src="@drawable/library_icon" />
 
-    <TextView
-        android:id="@+id/lbl_dummy2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/image_highlight_arrows"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/rubik_regular"
-        android:gravity="center"
-        android:text="@string/description_highlight"
-        android:textColor="#5D5D5D"
-        android:textSize="22dp" />
+        <TextView
+            android:id="@+id/lbl_dummy1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/library_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="73dp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="@string/description_library"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
 
-    <ImageView
-        android:id="@+id/image_highlight_arrows"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="122dp"
-        android:src="@drawable/arrow_down" />
+        <TextView
+            android:id="@+id/lbl_dummy2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/image_highlight_arrows"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:text="@string/description_highlight"
+            android:textColor="#5D5D5D"
+            android:textSize="22dp" />
 
+        <ImageView
+            android:id="@+id/image_highlight_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="122dp"
+            android:src="@drawable/arrow_down" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/record_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar">
+
+        <LinearLayout
+            android:id="@+id/record_graph_container"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="90dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_recording_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/record_graph_container"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:lines="1"
+            android:text="02:20"
+            android:textColor="#0E131E"
+            android:textSize="45dp"
+            app:autoSizeTextType="uniform" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_recording_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_recording_time"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:lines="1"
+            android:text="בגירסא זו ניתן להקליט עד 3 דק’"
+            android:textColor="#0E131E"
+            android:textSize="14dp"
+            app:autoSizeTextType="uniform" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_cancel_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_recording_message"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="#0E131E"
+            android:textSize="12dp"
+            app:drawableTopCompat="@drawable/cancel_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_save_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_recording_message"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:text="@string/save_recording_btn"
+            android:textColor="#0E131E"
+            android:textSize="12dp"
+            app:drawableTopCompat="@drawable/save_location_icon" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

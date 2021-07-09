@@ -77,7 +77,7 @@
         android:layout_marginEnd="50dp"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
+        android:foreground="@drawable/btn_white_bg"
         app:cardBackgroundColor="#FFD2D2"
         app:cardCornerRadius="15dp"
         app:cardElevation="7dp">
@@ -121,7 +121,7 @@
         android:layout_marginEnd="50dp"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
+        android:foreground="@drawable/btn_white_bg"
         app:cardBackgroundColor="#F9FAFC"
         app:cardCornerRadius="15dp"
         app:cardElevation="7dp">

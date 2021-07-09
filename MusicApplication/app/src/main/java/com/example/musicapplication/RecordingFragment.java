@@ -25,7 +25,7 @@ public class RecordingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view= inflater.inflate(R.layout.verification_layout, container, false);
+        view= inflater.inflate(R.layout.library_layout, container, false);
 
 
 
