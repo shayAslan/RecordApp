@@ -22,7 +22,7 @@ public class DiscoveryActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        replace(new RecordingFragment());
+        replace(new HomeFragment());
 
     }
 

@@ -51,6 +51,7 @@
     <string name="recording_dialog_title_text">האם את/ה רוצה לבטל את ההקלטה?</string>
     <string name="recording_dialog_text">לאחר ביטול, ההקלטה תמחק לאלתר.</string>
     <string name="save">שמירה</string>
+    <string name="my_stories_library">ספריית הסיפורים שלי</string>
 
 </resources>
 

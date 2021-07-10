@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/record_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/record_graph_container"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="90dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_recording_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/record_graph_container"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:lines="1"
+            android:text="02:20"
+            android:textColor="#0E131E"
+            android:textSize="45dp"
+            app:autoSizeTextType="uniform" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_recording_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_recording_time"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:lines="1"
+            android:text="בגירסא זו ניתן להקליט עד 3 דק’"
+            android:textColor="#0E131E"
+            android:textSize="14dp"
+            app:autoSizeTextType="uniform" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_cancel_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_recording_message"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="#0E131E"
+            android:textSize="12dp"
+            app:drawableTopCompat="@drawable/cancel_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_save_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_recording_message"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:text="@string/save_recording_btn"
+            android:textColor="#0E131E"
+            android:textSize="12dp"
+            app:drawableTopCompat="@drawable/save_location_icon" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
