@@ -79,7 +79,6 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="?attr/selectableItemBackground"
                         android:orientation="horizontal">
 
                         <TextView
@@ -120,7 +119,6 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="?attr/selectableItemBackground"
                         android:orientation="horizontal">
 
                         <TextView

@@ -162,7 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="115dp"
-        android:background="?attr/selectableItemBackground"
+        android:background="@drawable/btn_white_bg"
         android:fontFamily="@font/rubik_meduim"
         android:gravity="center"
         android:padding="5dp"
