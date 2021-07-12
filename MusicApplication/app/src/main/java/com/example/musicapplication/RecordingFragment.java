@@ -44,7 +44,7 @@ public class RecordingFragment extends Fragment {
         recyclerView=view.findViewById(R.id.main_rec);
 
 
-        MainAdapter mainAdapter=new MainAdapter(arrayList);
+        MainAdapter mainAdapter=new MainAdapter(arrayList,false);
         recyclerView.setAdapter(mainAdapter);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));

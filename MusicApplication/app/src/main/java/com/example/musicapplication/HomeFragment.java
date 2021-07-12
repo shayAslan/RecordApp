@@ -84,7 +84,7 @@ public class HomeFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recording_recycler);
 
 
-        MainAdapter mainAdapter=new MainAdapter(arrayList);
+        MainAdapter mainAdapter=new MainAdapter(arrayList, true);
         recyclerView.setAdapter(mainAdapter);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
