@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/record_button" android:state_selected="true" />
     <item android:drawable="@drawable/pause_button" android:state_selected="false" />
-    <item android:drawable="@drawable/record_button"/>
+    <item android:drawable="@drawable/record_button" />
 
-    
+
 </selector>

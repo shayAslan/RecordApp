@@ -10,13 +10,13 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="@dimen/upload_story_image_top_margin"
         android:src="@drawable/congrats_emoji" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="@dimen/upload_story_title_top_margin"
         android:fontFamily="@font/rubik_bold"
         android:gravity="center"
         android:text="@string/upload_story_title"
@@ -53,15 +53,16 @@
         android:layout_marginEnd="50dp"
         android:background="@drawable/underline_gray_layerlist"
         android:fontFamily="@font/rubik_meduim"
+        android:lines="1"
         android:padding="10dp"
         android:text="תל"
         android:textColor="#4A4B4B"
-        android:textSize="15sp" />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="@dimen/upload_story_text_top_margin"
         android:fontFamily="@font/rubik_bold"
         android:gravity="center"
         android:text="@string/upload_story_lbl_3"
@@ -72,9 +73,9 @@
         android:id="@+id/btn_take_picture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="@dimen/upload_story_buttons_side_margin"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="@dimen/upload_story_buttons_side_margin"
         android:clickable="true"
         android:focusable="true"
         android:foreground="@drawable/btn_white_bg"
@@ -116,9 +117,9 @@
         android:id="@+id/btn_upload_picture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="@dimen/upload_story_buttons_side_margin"
         android:layout_marginTop="17dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="@dimen/upload_story_buttons_side_margin"
         android:clickable="true"
         android:focusable="true"
         android:foreground="@drawable/btn_white_bg"
@@ -161,7 +162,7 @@
         android:id="@+id/btn_continue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="@dimen/upload_story_btn_continue_margin_top"
         android:background="@drawable/btn_white_bg"
         android:fontFamily="@font/rubik_meduim"
         android:gravity="center"

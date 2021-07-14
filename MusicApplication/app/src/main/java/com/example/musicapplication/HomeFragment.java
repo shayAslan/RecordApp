@@ -19,6 +19,7 @@ import java.util.ArrayList;
  */
 public class HomeFragment extends Fragment {
 
+    private boolean isShowRecording;
     View view;
     RecyclerView recyclerView;
     ArrayList arrayList;
@@ -34,6 +35,11 @@ public class HomeFragment extends Fragment {
 
     public HomeFragment() {
         // Required empty public constructor
+    }
+
+    public HomeFragment(boolean isShowRecording) {
+        // Required empty public constructor
+        this.isShowRecording = isShowRecording;
     }
 
     /**
@@ -88,6 +94,18 @@ public class HomeFragment extends Fragment {
         recyclerView.setAdapter(mainAdapter);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        if (isShowRecording){
+            view.findViewById(R.id.recording_container).setVisibility(View.VISIBLE);
+            view.findViewById(R.id.recording_list_container).setVisibility(View.GONE);
+            view.findViewById(R.id.recording_empty_container).setVisibility(View.GONE);
+
+
+        } else {
+            view.findViewById(R.id.recording_container).setVisibility(View.GONE);
+            view.findViewById(R.id.recording_list_container).setVisibility(View.VISIBLE);
+            view.findViewById(R.id.recording_empty_container).setVisibility(View.GONE);
+        }
 
         return view;
     }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recording_empty_top_image_top_margin">80dp</dimen>
+    <dimen name="recording_container_top_margin">90dp</dimen>
+    <dimen name="recording_container_height">240dp</dimen>
+    <dimen name="upload_story_image_top_margin">46dp</dimen>
+    <dimen name="upload_story_title_top_margin">49dp</dimen>
+    <dimen name="upload_story_buttons_side_margin">50dp</dimen>
+    <dimen name="upload_story_text_top_margin">58dp</dimen>
+    <dimen name="login_layout_top_image_margin">96dp</dimen>
+    <dimen name="upload_story_btn_continue_margin_top">115dp</dimen>
+    <dimen name="verification_layout_top_image_margin_top">100dp</dimen>
+    <dimen name="verification_layout_btn_didnt_got_code_top_margin">100dp</dimen>
+    <dimen name="btn_facebook_height">45dp</dimen>
+    <dimen name="edittext_height">45dp</dimen>
+    <dimen name="create_acount_middle_line_top_margin">14dp</dimen>
+    <dimen name="create_account_btn_height">45dp</dimen>
+    <dimen name="create_account_btn_skip_margin_top">10dp</dimen>
+    <dimen name="create_account_top_image_top_margin">30dp</dimen>
+</resources>

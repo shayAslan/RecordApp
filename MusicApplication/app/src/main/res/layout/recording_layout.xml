@@ -12,12 +12,26 @@
         <LinearLayout
             android:id="@+id/record_graph_container"
             android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:layout_marginTop="90dp"
+            android:layout_height="@dimen/recording_container_height"
+            android:layout_marginTop="@dimen/recording_container_top_margin"
             android:background="@color/white"
             android:orientation="vertical">
 
         </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/record_graph_container"
+            android:scaleType="fitXY"
+            android:src="@drawable/lines_top_record_screen" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/record_graph_container"
+            android:scaleType="fitXY"
+            android:src="@drawable/lines_bottom_record_screen" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/lbl_recording_time"

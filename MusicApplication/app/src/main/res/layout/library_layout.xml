@@ -76,13 +76,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/top_bar"
-        android:visibility="gone" />
+        android:visibility="visible" />
 
     <include
         android:id="@+id/recording_list_container"
         layout="@layout/recording_list_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="gone"
         android:layout_below="@+id/top_bar" />
 
 </RelativeLayout>
