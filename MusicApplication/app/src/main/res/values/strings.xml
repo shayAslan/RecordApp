@@ -52,6 +52,8 @@
     <string name="recording_dialog_text">לאחר ביטול, ההקלטה תמחק לאלתר.</string>
     <string name="save">שמירה</string>
     <string name="my_stories_library">ספריית הסיפורים שלי</string>
+    <string name="has_account">יש לי חשבון</string>
+    <string name="recording_save_dialog_title_text">האם את/ה רוצה לשמור את הסיפור?</string>
 
 </resources>
 

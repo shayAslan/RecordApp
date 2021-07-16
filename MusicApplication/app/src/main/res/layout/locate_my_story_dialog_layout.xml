@@ -74,7 +74,7 @@
                     android:gravity="start"
                     android:lines="1"
                     android:text="תל מונד"
-                    android:textColor="@color/black"
+                    android:textColor="#0E131E"
                     android:textSize="15dp" />
 
                 <TextView
@@ -90,7 +90,7 @@
                     android:gravity="start"
                     android:lines="1"
                     android:text="כתובת: לורם איפסום"
-                    android:textColor="@color/black"
+                    android:textColor="#0E131E"
                     android:textSize="12dp" />
 
                 <TextView
@@ -106,7 +106,7 @@
                     android:gravity="start"
                     android:lines="1"
                     android:text="כותרת הסיפור"
-                    android:textColor="@color/black"
+                    android:textColor="#0E131E"
                     android:textSize="12dp" />
 
             </RelativeLayout>
@@ -118,7 +118,8 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="18dp"
-                android:background="#CFD4D6" />
+                android:background="#CFD4D6"
+                android:visibility="gone" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -128,16 +129,17 @@
                 android:fontFamily="@font/rubik_meduim"
                 android:lines="1"
                 android:text="@string/lbl_locate_dialog_text"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
+                android:textColor="#0E131E"
+                android:textSize="15dp"
+                android:visibility="gone" />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="45dp"
                 android:checkedButton="@+id/radio_everyone"
                 android:gravity="end">
 
@@ -149,8 +151,9 @@
                     android:fontFamily="@font/rubik_regular"
                     android:layoutDirection="rtl"
                     android:text="@string/everyone"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
+                    android:textColor="#0E131E"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
 
                 <RadioButton
                     android:id="@+id/radio_only_me"
@@ -160,8 +163,9 @@
                     android:fontFamily="@font/rubik_regular"
                     android:layoutDirection="rtl"
                     android:text="@string/only_me"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
+                    android:textColor="#0E131E"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
             </RadioGroup>
 
 

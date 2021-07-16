@@ -62,7 +62,7 @@
                     android:gravity="start"
                     android:lines="1"
                     android:text="תל מונד"
-                    android:textColor="@color/black"
+                    android:textColor="#0E131E"
                     android:textSize="15dp" />
 
                 <TextView
@@ -77,7 +77,7 @@
                     android:gravity="start"
                     android:lines="1"
                     android:text="כתובת: לורם איפסום"
-                    android:textColor="@color/black"
+                    android:textColor="#0E131E"
                     android:textSize="12dp" />
 
                 <RelativeLayout
@@ -112,7 +112,7 @@
                         android:gravity="start"
                         android:lines="1"
                         android:text="כותרת הסיפור"
-                        android:textColor="@color/black"
+                        android:textColor="#0E131E"
                         android:textSize="12dp" />
 
                 </RelativeLayout>
@@ -153,7 +153,7 @@
                         android:gravity="center_vertical|end"
                         android:lines="1"
                         android:text="2K שיתפו"
-                        android:textColor="@color/black"
+                        android:textColor="#0E131E"
                         android:textSize="10dp" />
 
                     <ImageView
@@ -181,7 +181,7 @@
                         android:gravity="center_vertical|end"
                         android:lines="1"
                         android:text="2K האזינו"
-                        android:textColor="@color/black"
+                        android:textColor="#0E131E"
                         android:textSize="10dp" />
 
                     <ImageView
@@ -210,7 +210,7 @@
                         android:gravity="center_vertical|end"
                         android:lines="1"
                         android:text="2K הגיבו"
-                        android:textColor="@color/black"
+                        android:textColor="#0E131E"
                         android:textSize="10dp" />
 
                     <ImageView

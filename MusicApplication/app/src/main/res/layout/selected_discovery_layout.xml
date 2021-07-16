@@ -102,7 +102,7 @@
                                             android:layout_gravity="end|top"
                                             android:fontFamily="@font/rubik_meduim"
                                             android:text="שם/ניק ניים"
-                                            android:textColor="@color/black"
+                                            android:textColor="#0E131E"
                                             android:textSize="15dp" />
 
                                         <TextView
@@ -113,7 +113,7 @@
                                             android:fontFamily="@font/rubik_regular"
                                             android:gravity="end|top"
                                             android:text="הקלדת פרטים הבאים"
-                                            android:textColor="@color/black"
+                                            android:textColor="#0E131E"
                                             android:textSize="12dp" />
 
                                     </LinearLayout>
@@ -159,7 +159,7 @@
                                             android:gravity="center_vertical|end"
                                             android:lines="1"
                                             android:text="2K שיתפו"
-                                            android:textColor="@color/black"
+                                            android:textColor="#0E131E"
                                             android:textSize="10dp" />
 
                                         <ImageView
@@ -187,7 +187,7 @@
                                             android:gravity="center_vertical|end"
                                             android:lines="1"
                                             android:text="2K האזינו"
-                                            android:textColor="@color/black"
+                                            android:textColor="#0E131E"
                                             android:textSize="10dp" />
 
                                         <ImageView
@@ -216,7 +216,7 @@
                                             android:gravity="center_vertical|end"
                                             android:lines="1"
                                             android:text="2K הגיבו"
-                                            android:textColor="@color/black"
+                                            android:textColor="#0E131E"
                                             android:textSize="10dp" />
 
                                         <ImageView

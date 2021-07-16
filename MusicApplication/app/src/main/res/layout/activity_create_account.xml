@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubik_regular"
         android:text="@string/registration_sub_title_text"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="14dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +72,7 @@
                 android:fontFamily="@font/rubik_meduim"
                 android:gravity="center"
                 android:text="@string/register_using_facebook"
-                android:textColor="@color/black"
+                android:textColor="#0E131E"
                 android:textSize="16dp" />
 
         </RelativeLayout>
@@ -129,7 +129,7 @@
         android:layout_marginTop="2dp"
         android:fontFamily="@font/rubik_regular"
         android:text="@string/please_fill_the_following_details"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="14dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,6 +153,7 @@
             android:background="@drawable/edittext_register_bg"
             android:drawableStart="@drawable/asterisk"
             android:fontFamily="@font/rubik_regular"
+            android:gravity="right|center_vertical"
             android:hint="@string/hint_private_name"
             android:inputType="text"
             android:lines="1"
@@ -170,6 +171,7 @@
             android:background="@drawable/edittext_register_bg"
             android:drawableStart="@drawable/asterisk"
             android:fontFamily="@font/rubik_regular"
+            android:gravity="right|center_vertical"
             android:hint="@string/hint_last_name"
             android:inputType="text"
             android:lines="1"
@@ -191,7 +193,6 @@
             android:hint="@string/phone_number"
             android:inputType="phone"
             android:lines="1"
-            android:maxLines="10"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:textColor="#4A4B4B"
@@ -205,6 +206,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/edittext_register_bg"
             android:fontFamily="@font/rubik_regular"
+            android:gravity="right|center_vertical"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:lines="1"
@@ -296,7 +298,7 @@
 
         </androidx.cardview.widget.CardView>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btn_skip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -306,7 +308,22 @@
             android:gravity="center"
             android:padding="5dp"
             android:text="@string/skip"
-            android:textColor="@color/black"
+            android:textColor="#0E131E"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_has_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/underline_layerlist"
+            android:backgroundTint="#0E131E"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/has_account"
+            android:textColor="#0E131E"
             android:textSize="16dp" />
 
 

@@ -36,7 +36,7 @@
                 android:fontFamily="@font/rubik_meduim"
                 android:gravity="center"
                 android:text="@string/register_dialog_text"
-                android:textColor="@color/black"
+                android:textColor="#0E131E"
                 android:textSize="18dp" />
 
             <Button

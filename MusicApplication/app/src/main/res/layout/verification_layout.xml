@@ -22,7 +22,7 @@
         android:layout_marginTop="33dp"
         android:fontFamily="@font/rubik_bold"
         android:text="@string/verify_number"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="24dp" />
 
     <TextView
@@ -35,7 +35,7 @@
         android:fontFamily="@font/rubik_regular"
         android:gravity="center"
         android:text="@string/phone_verification_text"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="16dp" />
 
     <EditText
@@ -106,7 +106,7 @@
         android:gravity="center"
         android:padding="5dp"
         android:text="@string/didnt_got_the_code"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="16dp"
         android:visibility="visible" />
 

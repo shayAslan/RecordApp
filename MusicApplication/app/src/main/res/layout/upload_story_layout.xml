@@ -20,7 +20,7 @@
         android:fontFamily="@font/rubik_bold"
         android:gravity="center"
         android:text="@string/upload_story_title"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="24dp" />
 
     <TextView
@@ -31,7 +31,7 @@
         android:gravity="center"
         android:lines="1"
         android:text="@string/upload_story_lbl_1"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="16dp" />
 
     <TextView
@@ -41,7 +41,7 @@
         android:fontFamily="@font/rubik_bold"
         android:gravity="center"
         android:text="@string/upload_story_lbl_2"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="16dp" />
 
     <EditText
@@ -55,7 +55,6 @@
         android:fontFamily="@font/rubik_meduim"
         android:lines="1"
         android:padding="10dp"
-        android:text="תל"
         android:textColor="#4A4B4B"
         android:textSize="15dp" />
 
@@ -66,7 +65,7 @@
         android:fontFamily="@font/rubik_bold"
         android:gravity="center"
         android:text="@string/upload_story_lbl_3"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="16dp" />
 
     <androidx.cardview.widget.CardView
@@ -106,7 +105,7 @@
                 android:fontFamily="@font/rubik_regular"
                 android:gravity="center"
                 android:text="@string/take_picture"
-                android:textColor="@color/black"
+                android:textColor="#0E131E"
                 android:textSize="17dp" />
 
         </RelativeLayout>
@@ -151,7 +150,7 @@
                 android:fontFamily="@font/rubik_regular"
                 android:gravity="center"
                 android:text="@string/gallery_picture"
-                android:textColor="@color/black"
+                android:textColor="#0E131E"
                 android:textSize="17dp" />
 
         </RelativeLayout>
@@ -168,7 +167,7 @@
         android:gravity="center"
         android:padding="5dp"
         android:text="@string/continue_btn"
-        android:textColor="@color/black"
+        android:textColor="#0E131E"
         android:textSize="14dp" />
 
 

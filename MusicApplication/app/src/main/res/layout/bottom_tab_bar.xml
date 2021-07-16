@@ -49,7 +49,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/btn_white_bg"
                 android:scaleType="center"
-                android:src="@drawable/home" />
+                android:src="@drawable/home_btn" />
 
         </LinearLayout>
 
