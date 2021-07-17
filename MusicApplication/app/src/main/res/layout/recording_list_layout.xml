@@ -44,7 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lbl_dummy1"
         tools:itemCount="10"
-        tools:listitem="@layout/my_story_item_layout" />
+        tools:listitem="@layout/my_story_item_layout_normal" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

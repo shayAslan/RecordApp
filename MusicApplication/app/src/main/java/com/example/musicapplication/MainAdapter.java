@@ -24,7 +24,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        int id = showMain ? R.layout.my_story_item_layout : R.layout.normal_discovery_layout;
+        int id = showMain ? R.layout.my_story_item_layout_unselected : R.layout.normal_discovery_layout;
         View view= LayoutInflater.from(parent.getContext()).inflate(id,parent,false);
 
 
