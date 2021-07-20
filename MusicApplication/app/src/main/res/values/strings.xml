@@ -56,6 +56,9 @@
     <string name="recording_save_dialog_title_text">האם את/ה רוצה לשמור את הסיפור?</string>
     <string name="shears">שתף/י</string>
     <string name="reacted">הגיב/י</string>
+    <string name="welcome">ברוכים הבאים</string>
+    <string name="myrecord">MyRecord</string>
+    <string name="skips">דלג/י</string>
 
 </resources>
 
