@@ -22,7 +22,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
                 try {
                     Thread.sleep(3000);
-                    Intent intent=new Intent(SplashScreenActivity.this, CreateAccountActivity.class);
+                    Intent intent=new Intent(SplashScreenActivity.this, FullscreenActivity.class);
                     startActivity(intent);
                     finish();
 
