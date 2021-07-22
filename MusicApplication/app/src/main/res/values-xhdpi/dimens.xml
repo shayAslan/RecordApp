@@ -8,7 +8,7 @@
     <dimen name="upload_story_buttons_side_margin">50dp</dimen>
     <dimen name="upload_story_text_top_margin">40dp</dimen>
     <dimen name="login_layout_top_image_margin">96dp</dimen>
-    <dimen name="upload_story_btn_continue_margin_top">40dp</dimen>
+    <dimen name="upload_story_btn_continue_margin_top">30dp</dimen>
     <dimen name="verification_layout_top_image_margin_top">100dp</dimen>
     <dimen name="verification_layout_btn_didnt_got_code_top_margin">100dp</dimen>
     <dimen name="btn_facebook_height">45dp</dimen>

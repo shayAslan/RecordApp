@@ -6,9 +6,9 @@
     <dimen name="upload_story_image_top_margin">46dp</dimen>
     <dimen name="upload_story_title_top_margin">49dp</dimen>
     <dimen name="upload_story_buttons_side_margin">50dp</dimen>
-    <dimen name="upload_story_text_top_margin">58dp</dimen>
+    <dimen name="upload_story_text_top_margin">40dp</dimen>
     <dimen name="login_layout_top_image_margin">96dp</dimen>
-    <dimen name="upload_story_btn_continue_margin_top">50dp</dimen>
+    <dimen name="upload_story_btn_continue_margin_top">30dp</dimen>
     <dimen name="verification_layout_top_image_margin_top">100dp</dimen>
     <dimen name="verification_layout_btn_didnt_got_code_top_margin">100dp</dimen>
     <dimen name="btn_facebook_height">60dp</dimen>
