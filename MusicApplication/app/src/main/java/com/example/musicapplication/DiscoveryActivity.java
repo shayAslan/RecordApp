@@ -24,15 +24,24 @@ public class DiscoveryActivity extends AppCompatActivity {
         }
 
         replace(new HomeFragment());
-        Fragment fragment =new HomeFragment(true);
-        Fragment fragment2 =new HomeFragment(false);
+        Fragment fragment = new HomeFragment(true);
+        Fragment fragment2 = new HomeFragment(false);
 
-        findViewById(R.id.btn_main_menu).setOnClickListener(view ->
-                replace(new RecordingFragment()));
+        findViewById(R.id.btn_main_menu).setOnClickListener(view -> {
+            findViewById(R.id.btn_main_home).setSelected(false);
+            view.setSelected(true);
+            replace(new RecordingFragment());
+        });
+
+        findViewById(R.id.btn_main_home).setOnClickListener(view -> {
+            replace(fragment2);
+            findViewById(R.id.btn_main_menu).setSelected(false);
+            view.setSelected(true);
+        });
+
         findViewById(R.id.btn_main_record).setOnClickListener(view ->
                 replace(fragment));
-        findViewById(R.id.btn_main_home).setOnClickListener(view ->
-                replace(fragment2));
+
     }
 
     private void replace(Fragment fragment) {

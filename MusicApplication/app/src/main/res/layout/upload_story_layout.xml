@@ -53,6 +53,7 @@
         android:layout_marginEnd="50dp"
         android:background="@drawable/underline_gray_layerlist"
         android:fontFamily="@font/rubik_meduim"
+        android:imeOptions="actionDone"
         android:lines="1"
         android:padding="10dp"
         android:textColor="#4A4B4B"
