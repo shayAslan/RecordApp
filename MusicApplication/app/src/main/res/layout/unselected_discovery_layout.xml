@@ -15,7 +15,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="130dp"
             android:layout_margin="5dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="12dp"
@@ -53,7 +53,7 @@
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="110dp"
                         android:layout_marginTop="11dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginBottom="11dp"
@@ -111,6 +111,41 @@
                                             android:text="הקלדת פרטים הבאים"
                                             android:textColor="#0E131E"
                                             android:textSize="12dp" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageView
+                                                android:id="@+id/point"
+                                                android:layout_width="5dp"
+                                                android:layout_height="5dp"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_centerVertical="true"
+                                                android:gravity="center"
+                                                android:src="@drawable/gray_circle"
+                                                android:textColor="#FF9D9D"
+                                                app:tint="#FF9D9D" />
+
+                                            <androidx.appcompat.widget.AppCompatTextView
+                                                android:id="@+id/lbl_story_title"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginTop="9dp"
+                                                android:layout_marginEnd="4dp"
+                                                android:layout_toStartOf="@+id/point"
+                                                android:fontFamily="@font/rubik_meduim"
+                                                android:gravity="start"
+                                                android:lines="1"
+                                                android:text="כותרת הסיפור"
+                                                android:textColor="#0E131E"
+                                                android:textSize="12dp"
+                                                app:autoSizeTextType="uniform" />
+
+                                        </RelativeLayout>
+
 
                                     </LinearLayout>
 
